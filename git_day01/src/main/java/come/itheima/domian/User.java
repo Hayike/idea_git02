@@ -6,6 +6,15 @@ public class User {
     private  String id;
 
     private int age;
+    private String phone;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public String getName() {
         return name;
@@ -29,5 +38,12 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public User(String name, String id, int age, String phone) {
+        this.name = name;
+        this.id = id;
+        this.age = age;
+        this.phone = phone;
     }
 }
